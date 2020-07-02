@@ -1,5 +1,5 @@
 @import 'config';
-@import 'utilities';
+@import 'toggler';
 
 * {
   box-sizing: border-box;
@@ -10,7 +10,7 @@
 body {
   font-family: 'Inter', sans-serif;
   background-color: var(--color-primary);
-  width: 75%;
+  width: 80%;
   margin: auto;
 }
 .top-background {
@@ -37,27 +37,11 @@ header {
     @include flexboxCenter();
     color: var(--text-color1);
     font-size: 80%;
-
-    .togglerContainer {
-      width: 40px;
-      height: 20px;
-      margin-left: 0.6rem;
-      border-radius: 20px;
-      background: var(--toggler-bg);
-      position: relative;
-      .toggler {
-        cursor: pointer;
-        width: 14px;
-        height: 14px;
-        border-radius: 50%;
-        background-color: var(--color-primary);
-        position: absolute;
-        top: 50%;
-        right: 8%;
-        transform: translateY(-50%);
-      }
-    }
   }
+}
+hr.new2 {
+  border: 0.5px solid var(--text-color1);
+  visibility: hidden;
 }
 
 main {

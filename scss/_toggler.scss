@@ -1,0 +1,19 @@
+.togglerContainer {
+  width: 40px;
+  height: 20px;
+  margin-left: 0.6rem;
+  border-radius: 20px;
+  background: var(--toggler-bg);
+  position: relative;
+  .toggler {
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    position: absolute;
+    top: 50%;
+    right: 8%;
+    transform: translateY(-50%);
+  }
+}
